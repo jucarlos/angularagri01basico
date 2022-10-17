@@ -1,0 +1,36 @@
+
+
+<h3>Listado de Colegios</h3>
+
+<button type="button" 
+        (click)="agregarColegio()"
+        class="btn btn-outline-primary me-3">Agregar Colegio</button>
+        
+
+<button type="button"
+        (click)="borrarColegio()"
+        class="btn btn-outline-danger">Borrar Colegio</button>
+
+
+<ul *ngIf="colegios.length > 0; else noHayColegios"
+    class="list-group mt-5">
+    <li *ngFor="let colegio of colegios; let i = index"
+        class="list-group-item">{{ i + 1 }} - {{ colegio }}
+    </li>
+</ul>
+
+
+
+<ng-template #noHayColegios>
+    <div class="alert alert-success mt-3" role="alert">
+        No hay colegios
+    </div>
+</ng-template>
+
+
+
+
+
+
+
+

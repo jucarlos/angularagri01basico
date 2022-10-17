@@ -1,27 +1,36 @@
-# Basicaapp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.3.
+## Aplicación básica de angular.
 
-## Development server
+1. Hemos creado la aplicación con 
+ng new basicaapp
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+2. Ejecutar la aplicación en su carpeta.
+ng serve -o
 
-## Code scaffolding
+3. volver a instalar dependencias ( lo hemos usado porque he borrado node_modules )
+npm install
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+4. Módulos de angular
+Componentes, Servicios, Pipes...
 
-## Build
+5. Componente principal
+es App. ( html, ts )
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+6. Crear un componente.
+ng generate --help
+ng g c colegios
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+7. Instalar Bootstrap para tener estilos mas chulos.
 
-## Running end-to-end tests
+8. Primeras directivas de angular.
+( Estructurales )
+*ngFor, *ngIf.
+( Atributos : ngClass, )
+( Directivas de componentes)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+9. Servicios.
+para crear un servicio:
+ng g s nombreservicio.
+Singlenton. Se instancian una vez para toda la aplicación. Lo vemos.
+Caso ng g s services/colegios --skip-tests
