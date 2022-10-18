@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ColegiosService } from '../services/colegios.service';
 
+
 @Component({
   selector: 'app-colegios',
   templateUrl: './colegios.component.html',
